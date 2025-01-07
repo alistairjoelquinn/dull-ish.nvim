@@ -1,4 +1,4 @@
-local colors = require("colors.dullboy.palette")
+local colors = require("palette")
 
 vim.cmd("highlight clear")
 if vim.fn.exists("syntax_on") then
