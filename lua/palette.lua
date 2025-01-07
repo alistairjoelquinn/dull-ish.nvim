@@ -7,10 +7,10 @@ return {
   fg_lighter = "#aaaaaa", -- lighter grey for emphasis
 
   -- subtle accent colors (all very desaturated)
-  subtle_yellow = "#D4C244", -- less bright yellow
+  subtle_yellow = "#B5A63C", -- even less bright yellow
   subtle_orange = "#b77e89", -- muted rose color
   subtle_green = "#7a8574", -- lighter, brighter green
-  subtle_blue = "#b87f47", -- warm orange (replacing blue)
+  subtle_blue = "#7B8FA6", -- light blue (for variables)
 
   -- ui colors
   ui_grey = "#464646", -- for ui elements

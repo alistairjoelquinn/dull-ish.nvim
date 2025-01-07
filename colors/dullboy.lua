@@ -62,11 +62,8 @@ local groups = {
   ["@keyword"] = { fg = colors.fg },
   ["@string"] = { fg = colors.subtle_green },
   ["@function"] = { fg = colors.subtle_yellow, italic = true },
-  ["@function.call"] = { fg = colors.subtle_yellow, italic = true },
   ["@field"] = { fg = colors.subtle_blue },
   ["@property"] = { fg = colors.subtle_blue },
-  ["@variable"] = { fg = colors.fg },
-  ["@variable.builtin"] = { fg = colors.fg_darker },
   ["@constructor"] = { fg = colors.fg },
   ["@tag"] = { fg = colors.fg },
   ["@tag.attribute"] = { fg = colors.subtle_yellow },
@@ -76,6 +73,11 @@ local groups = {
   ["@punctuation.special"] = { fg = colors.subtle_orange },
   ["@comment"] = { fg = colors.comment_grey, italic = true },
   ["@operator"] = { fg = colors.fg_darker },
+  ["@variable"] = { fg = colors.subtle_blue },
+  ["@variable.member"] = { fg = colors.subtle_blue },
+  ["@variable.builtin"] = { fg = colors.subtle_blue },
+  ["@function.builtin"] = { fg = colors.subtle_yellow, italic = true },
+  ["@function.call"] = { fg = colors.subtle_yellow, italic = true },
 
   -- lsp semantic token groups
   ["@lsp.type.class"] = { fg = colors.fg },
