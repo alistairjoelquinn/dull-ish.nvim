@@ -115,6 +115,12 @@ local function apply_colors()
     DiagnosticWarn = { fg = colors.subtle_yellow },
     DiagnosticInfo = { fg = colors.subtle_blue },
     DiagnosticHint = { fg = colors.subtle_green },
+
+    -- nvim-tree highlights
+    NvimTreeFolderName = { fg = colors.fg_darker },
+    NvimTreeOpenedFolderName = { fg = colors.fg_darker },
+    NvimTreeEmptyFolderName = { fg = colors.fg_darker },
+    NvimTreeFolderIcon = { fg = colors.fg_darker },
   }
 
   for group, settings in pairs(groups) do
