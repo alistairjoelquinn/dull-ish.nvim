@@ -10,7 +10,7 @@ local colors = {
   fg_lighter = "#aaaaaa", -- lighter grey for emphasis
 
   -- subtle accent colors (all very desaturated)
-  subtle_yellow = "#8b815e", -- muted yellow
+  subtle_yellow = "#FFE751", -- yellow
   subtle_orange = "#8b7355", -- muted orange
   subtle_green = "#657163", -- muted green
   subtle_blue = "#616b7b", -- muted blue
