@@ -7,7 +7,7 @@ return {
   fg_lighter = "#aaaaaa", -- lighter grey for emphasis
 
   -- subtle accent colors (all very desaturated)
-  subtle_yellow = "#B5A63C", -- even less bright yellow
+  subtle_yellow = "#B5A63C", -- less bright yellow
   subtle_orange = "#b77e89", -- muted rose color
   subtle_green = "#7a8574", -- lighter, brighter green
   subtle_blue = "#7B8FA6", -- light blue (for variables)
