@@ -3,7 +3,7 @@ local M = {}
 -- color palette - low contrast, monochromatic with subtle accents
 local colors = {
   -- base colors
-  bg = "#1f2226", -- slightly lighter dark background
+  bg = "#202328", -- slightly lighter dark background
   bg_lighter = "#252830", -- for subtle highlights
   fg = "#999999", -- muted grey for main text
   fg_darker = "#777777", -- darker grey for less emphasis
@@ -21,7 +21,7 @@ local colors = {
   comment_grey = "#5a5a5a", -- for comments
 }
 
-local function apply_colors()
+function M.setup()
   vim.cmd("highlight clear")
   if vim.fn.exists("syntax_on") then
     vim.cmd("syntax reset")
@@ -126,10 +126,6 @@ local function apply_colors()
   for group, settings in pairs(groups) do
     vim.api.nvim_set_hl(0, group, settings)
   end
-end
-
-function M.setup()
-  apply_colors()
 end
 
 return M
