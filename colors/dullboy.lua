@@ -73,12 +73,13 @@ local groups = {
   ["@type.import"] = { fg = colors.subtle_blue },
   ["@constant"] = { fg = colors.subtle_blue },
 
-  -- Import specific captures
+  -- imports
   ["@identifier.import"] = { link = "@function" },
   ["@import.identifier"] = { link = "@function" },
   ["@parameter.import"] = { link = "@function" },
   ["@function.import"] = { fg = colors.subtle_yellow, italic = true },
 
+  -- misc
   ["@field"] = { fg = colors.subtle_blue },
   ["@property"] = { fg = colors.subtle_blue },
   ["@constructor"] = { fg = colors.fg },
