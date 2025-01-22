@@ -1,8 +1,8 @@
-local colors = require("palette")
+local colors = require "palette"
 
-vim.cmd("highlight clear")
-if vim.fn.exists("syntax_on") then
-  vim.cmd("syntax reset")
+vim.cmd "highlight clear"
+if vim.fn.exists "syntax_on" then
+  vim.cmd "syntax reset"
 end
 
 vim.o.background = "dark"
@@ -18,7 +18,7 @@ local groups = {
   CursorLineNr = { fg = colors.subtle_yellow },
   SignColumn = { bg = colors.bg },
 
-  -- syntax highlighting (predominantly monochrome with subtle accents)
+  -- syntax highlighting
   Comment = { fg = colors.comment_grey, italic = true },
   String = { fg = colors.subtle_green },
   Number = { fg = colors.fg_darker },
