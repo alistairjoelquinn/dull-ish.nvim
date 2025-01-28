@@ -97,6 +97,9 @@ local groups = {
   ["@variable.other"] = { fg = colors.subtle_blue },
   ["@definition.import"] = { fg = colors.subtle_yellow, italic = true },
   ["@definition.function"] = { fg = colors.subtle_yellow, italic = true },
+  ["@definition.import.identifier"] = { fg = colors.subtle_yellow, italic = true },
+  ["@definition.import.name"] = { fg = colors.subtle_yellow, italic = true },
+  ["@definition.import.alias"] = { fg = colors.subtle_yellow, italic = true },
 
   -- lsp semantic token groups
   ["@lsp.type.class"] = { fg = colors.fg },
