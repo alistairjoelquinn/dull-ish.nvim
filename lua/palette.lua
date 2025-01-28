@@ -1,7 +1,8 @@
 return {
   -- base colors
-  -- bg = "#202328",
-  bg = "#030304",
+  -- bg = "#202328", -- lightest
+  bg = "#1b1b20", -- middle,
+  -- bg = "#030304", -- darkest
   bg_lighter = "#252830",
   fg = "#999999",
   fg_darker = "#777777",
