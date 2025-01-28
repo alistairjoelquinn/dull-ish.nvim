@@ -70,16 +70,16 @@ local groups = {
   ["@variable.member"] = { fg = colors.subtle_blue },
   ["@variable.builtin"] = { fg = colors.subtle_blue },
   ["@type"] = { fg = colors.subtle_blue },
-  ["@type.import"] = { fg = colors.subtle_blue },
+  ["@type.builtin"] = { fg = colors.subtle_blue },
   ["@constant"] = { fg = colors.subtle_blue },
 
-  -- imports and exports
+  -- ts imports specifically
   ["@variable.import"] = { fg = colors.subtle_yellow, italic = true },
+  ["@function.import"] = { fg = colors.subtle_yellow, italic = true },
+  ["@identifier"] = { fg = colors.subtle_yellow, italic = true },
   ["@identifier.import"] = { fg = colors.subtle_yellow, italic = true },
-  ["@import"] = { fg = colors.fg },
-  ["@include"] = { fg = colors.fg },
-  ["@include.identifier"] = { fg = colors.subtle_yellow, italic = true },
-  ["@keyword.import"] = { fg = colors.fg }, -- For 'import' keyword
+  ["@import"] = { fg = colors.subtle_yellow, italic = true },
+  ["@include"] = { fg = colors.fg }, -- 'import' keyword
 
   -- misc
   ["@field"] = { fg = colors.subtle_blue },
@@ -97,8 +97,7 @@ local groups = {
   ["@variable.parameter"] = { fg = colors.subtle_blue },
   ["@variable.other.constant"] = { fg = colors.subtle_blue },
   ["@variable.other"] = { fg = colors.subtle_blue },
-  ["@definition.import"] = { fg = colors.subtle_yellow, italic = true },
-  ["@definition.function"] = { fg = colors.subtle_yellow, italic = true },
+  ["@definition"] = { fg = colors.subtle_yellow, italic = true },
 
   -- lsp semantic token groups
   ["@lsp.type.class"] = { fg = colors.fg },
