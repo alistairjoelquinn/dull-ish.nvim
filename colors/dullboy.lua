@@ -32,6 +32,7 @@ local groups = {
   PreProc = { fg = colors.fg },
   Delimiter = { fg = colors.subtle_green },
   Operator = { fg = colors.fg_darker },
+  Variable = { fg = colors.subtle_blue },
 
   -- ui elements
   WinSeparator = { fg = colors.ui_grey },
@@ -72,20 +73,12 @@ local groups = {
   ["@type"] = { fg = colors.subtle_blue },
   ["@type.builtin"] = { fg = colors.subtle_blue },
   ["@constant"] = { fg = colors.subtle_blue },
-
-  -- ts imports specifically
-  ["@variable.import"] = { fg = colors.subtle_yellow, italic = true },
   ["@function.import"] = { fg = colors.subtle_yellow, italic = true },
   ["@function.imported"] = { fg = colors.subtle_yellow, italic = true },
   ["@module"] = { fg = colors.subtle_yellow, italic = true },
-  ["@identifier"] = { fg = colors.subtle_yellow, italic = true },
-  ["@identifier.import"] = { fg = colors.subtle_yellow, italic = true },
-  ["@import"] = { fg = colors.subtle_yellow, italic = true },
-  ["@include"] = { fg = colors.fg }, -- 'import' keyword
   ["@module.name"] = { fg = colors.subtle_yellow, italic = true },
-  ["@module.exports"] = { fg = colors.subtle_yellow, italic = true },
-  ["@namespace"] = { fg = colors.subtle_yellow, italic = true },
-  ["@type.qualifier"] = { fg = colors.fg }, -- for 'import' and 'export'
+  ["@module.import"] = { fg = colors.subtle_yellow, italic = true },
+  ["@definition.import"] = { fg = colors.subtle_yellow, italic = true },
 
   -- misc
   ["@field"] = { fg = colors.subtle_blue },

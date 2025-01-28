@@ -9,10 +9,10 @@ return {
   fg_lighter = "#aaaaaa",
 
   -- accent colors
-  yellow = "#afa35b",
-  pink = "#b77e89",
-  green = "#7a8574",
-  blue = "#7B8FA6",
+  subtle_yellow = "#afa35b",
+  subtle_pink = "#b77e89",
+  subtle_green = "#7a8574",
+  subtle_blue = "#7B8FA6",
 
   -- ui colors
   ui_grey = "#464646",
