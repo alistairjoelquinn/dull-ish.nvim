@@ -73,14 +73,13 @@ local groups = {
   ["@type.import"] = { fg = colors.subtle_blue },
   ["@constant"] = { fg = colors.subtle_blue },
 
-  -- imports
+  -- imports and exports
+  ["@variable.import"] = { fg = colors.subtle_yellow, italic = true },
   ["@identifier.import"] = { fg = colors.subtle_yellow, italic = true },
-  ["@import.identifier"] = { fg = colors.subtle_yellow, italic = true },
-  ["@parameter.import"] = { fg = colors.subtle_yellow, italic = true },
-  ["@function.import"] = { fg = colors.subtle_yellow, italic = true },
-  ["@import"] = { fg = colors.subtle_yellow, italic = true },
-  ["@include"] = { fg = colors.fg }, -- for the 'import' keyword itself
-  ["@namespace"] = { fg = colors.subtle_yellow, italic = true }, -- for imported module names
+  ["@import"] = { fg = colors.fg },
+  ["@include"] = { fg = colors.fg },
+  ["@include.identifier"] = { fg = colors.subtle_yellow, italic = true },
+  ["@keyword.import"] = { fg = colors.fg }, -- For 'import' keyword
 
   -- misc
   ["@field"] = { fg = colors.subtle_blue },
@@ -100,9 +99,6 @@ local groups = {
   ["@variable.other"] = { fg = colors.subtle_blue },
   ["@definition.import"] = { fg = colors.subtle_yellow, italic = true },
   ["@definition.function"] = { fg = colors.subtle_yellow, italic = true },
-  ["@definition.import.identifier"] = { fg = colors.subtle_yellow, italic = true },
-  ["@definition.import.name"] = { fg = colors.subtle_yellow, italic = true },
-  ["@definition.import.alias"] = { fg = colors.subtle_yellow, italic = true },
 
   -- lsp semantic token groups
   ["@lsp.type.class"] = { fg = colors.fg },
