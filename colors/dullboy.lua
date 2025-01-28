@@ -62,27 +62,35 @@ local groups = {
   -- treesitter groups
   ["@keyword"] = { fg = colors.fg },
   ["@string"] = { fg = colors.subtle_green },
+
   ["@function"] = { fg = colors.subtle_yellow, italic = true },
   ["@function.call"] = { fg = colors.subtle_yellow, italic = true },
   ["@function.builtin"] = { fg = colors.subtle_yellow, italic = true },
+  ["@function.import"] = { fg = colors.subtle_yellow, italic = true },
+  ["@function.imported"] = { fg = colors.subtle_yellow, italic = true },
+  ["@function.macro"] = { fg = colors.subtle_yellow, italic = true },
   ["@method"] = { fg = colors.subtle_yellow, italic = true },
   ["@method.call"] = { fg = colors.subtle_yellow, italic = true },
+
   ["@variable"] = { fg = colors.subtle_blue },
   ["@variable.member"] = { fg = colors.subtle_blue },
   ["@variable.builtin"] = { fg = colors.subtle_blue },
+  ["@variable.parameter"] = { fg = colors.subtle_blue },
+  ["@variable.other"] = { fg = colors.subtle_blue },
+  ["@variable.other.constant"] = { fg = colors.subtle_blue },
+  ["@constant"] = { fg = colors.subtle_blue },
+  ["@field"] = { fg = colors.subtle_blue },
+  ["@property"] = { fg = colors.subtle_blue },
+  ["@parameter"] = { fg = colors.subtle_blue },
+
   ["@type"] = { fg = colors.subtle_blue },
   ["@type.builtin"] = { fg = colors.subtle_blue },
-  ["@constant"] = { fg = colors.subtle_blue },
-  ["@function.import"] = { fg = colors.subtle_yellow, italic = true },
-  ["@function.imported"] = { fg = colors.subtle_yellow, italic = true },
   ["@module"] = { fg = colors.subtle_yellow, italic = true },
   ["@module.name"] = { fg = colors.subtle_yellow, italic = true },
   ["@module.import"] = { fg = colors.subtle_yellow, italic = true },
   ["@definition.import"] = { fg = colors.subtle_yellow, italic = true },
 
   -- misc
-  ["@field"] = { fg = colors.subtle_blue },
-  ["@property"] = { fg = colors.subtle_blue },
   ["@constructor"] = { fg = colors.fg },
   ["@tag"] = { fg = colors.fg },
   ["@tag.attribute"] = { fg = colors.subtle_yellow },
@@ -92,10 +100,6 @@ local groups = {
   ["@punctuation.special"] = { fg = colors.subtle_orange },
   ["@comment"] = { fg = colors.comment_grey, italic = true },
   ["@operator"] = { fg = colors.fg_darker },
-  ["@parameter"] = { fg = colors.subtle_blue },
-  ["@variable.parameter"] = { fg = colors.subtle_blue },
-  ["@variable.other.constant"] = { fg = colors.subtle_blue },
-  ["@variable.other"] = { fg = colors.subtle_blue },
   ["@definition"] = { fg = colors.subtle_yellow, italic = true },
 
   -- lsp semantic token groups
