@@ -4,7 +4,8 @@
 
 This theme is based on my own preferences. Low contrast and predominantly monochrome, with some subtle / dull colour hints to help navigate the eyes.
 
-<img width="1171" alt="Screenshot 2025-01-27 at 21 15 43" src="https://github.com/user-attachments/assets/b6d79905-88c8-484e-805b-897fbc99843b" />
+![Screenshot 2025-01-28 at 11 05 01](https://github.com/user-attachments/assets/0a8875ea-780b-471f-b3af-b2d955c64847)
+
 
 It is currently in very early development. There are still some inconsistencies in the applicaton of the colours which need to be ironed out. 
 
