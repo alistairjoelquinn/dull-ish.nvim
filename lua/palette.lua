@@ -1,5 +1,6 @@
 return {
   -- base colors
+  -- bg = "#202328",
   bg = "#030304",
   bg_lighter = "#252830",
   fg = "#999999",
