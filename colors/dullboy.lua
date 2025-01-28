@@ -82,6 +82,10 @@ local groups = {
   ["@identifier.import"] = { fg = colors.subtle_yellow, italic = true },
   ["@import"] = { fg = colors.subtle_yellow, italic = true },
   ["@include"] = { fg = colors.fg }, -- 'import' keyword
+  ["@module.name"] = { fg = colors.subtle_yellow, italic = true },
+  ["@module.exports"] = { fg = colors.subtle_yellow, italic = true },
+  ["@namespace"] = { fg = colors.subtle_yellow, italic = true },
+  ["@type.qualifier"] = { fg = colors.fg }, -- for 'import' and 'export'
 
   -- misc
   ["@field"] = { fg = colors.subtle_blue },
