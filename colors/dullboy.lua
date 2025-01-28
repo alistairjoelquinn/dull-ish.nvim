@@ -27,7 +27,7 @@ local groups = {
   Constant = { fg = colors.fg_lighter },
   Type = { fg = colors.fg },
   Statement = { fg = colors.fg },
-  Special = { fg = colors.subtle_orange },
+  Special = { fg = colors.subtle_pink },
   Identifier = { fg = colors.subtle_blue },
   PreProc = { fg = colors.fg },
   Delimiter = { fg = colors.subtle_green },
@@ -54,15 +54,12 @@ local groups = {
   FoldColumn = { fg = colors.ui_grey },
 
   -- messages
-  ErrorMsg = { fg = colors.subtle_orange },
+  ErrorMsg = { fg = colors.subtle_pink },
   WarningMsg = { fg = colors.subtle_yellow },
   MoreMsg = { fg = colors.subtle_green },
   Question = { fg = colors.subtle_blue },
 
   -- treesitter groups
-  ["@keyword"] = { fg = colors.fg },
-  ["@string"] = { fg = colors.subtle_green },
-
   ["@function"] = { fg = colors.subtle_yellow, italic = true },
   ["@function.call"] = { fg = colors.subtle_yellow, italic = true },
   ["@function.builtin"] = { fg = colors.subtle_yellow, italic = true },
@@ -83,28 +80,31 @@ local groups = {
   ["@property"] = { fg = colors.subtle_blue },
   ["@parameter"] = { fg = colors.subtle_blue },
 
-  ["@type"] = { fg = colors.subtle_blue },
-  ["@type.builtin"] = { fg = colors.subtle_blue },
+  ["@type"] = { fg = colors.subtle_purple },
+  ["@type.builtin"] = { fg = colors.subtle_purple },
+
   ["@module"] = { fg = colors.subtle_yellow, italic = true },
   ["@module.name"] = { fg = colors.subtle_yellow, italic = true },
   ["@module.import"] = { fg = colors.subtle_yellow, italic = true },
   ["@definition.import"] = { fg = colors.subtle_yellow, italic = true },
 
   -- misc
+  ["@keyword"] = { fg = colors.fg },
+  ["@string"] = { fg = colors.subtle_green },
   ["@constructor"] = { fg = colors.fg },
   ["@tag"] = { fg = colors.fg },
   ["@tag.attribute"] = { fg = colors.subtle_yellow },
   ["@tag.delimiter"] = { fg = colors.subtle_green },
   ["@punctuation.delimiter"] = { fg = colors.subtle_green },
   ["@punctuation.bracket"] = { fg = colors.subtle_green },
-  ["@punctuation.special"] = { fg = colors.subtle_orange },
+  ["@punctuation.special"] = { fg = colors.subtle_pink },
   ["@comment"] = { fg = colors.comment_grey, italic = true },
   ["@operator"] = { fg = colors.fg_darker },
   ["@definition"] = { fg = colors.subtle_yellow, italic = true },
 
   -- lsp semantic token groups
   ["@lsp.type.class"] = { fg = colors.fg },
-  ["@lsp.type.decorator"] = { fg = colors.subtle_orange },
+  ["@lsp.type.decorator"] = { fg = colors.subtle_pink },
   ["@lsp.type.enum"] = { fg = colors.fg },
   ["@lsp.type.function"] = { fg = colors.subtle_yellow, italic = true },
   ["@lsp.type.interface"] = { fg = colors.fg },
@@ -115,7 +115,7 @@ local groups = {
   ["@lsp.mod.callable"] = { fg = colors.subtle_yellow, italic = true },
 
   -- diagnostics
-  DiagnosticError = { fg = colors.subtle_orange },
+  DiagnosticError = { fg = colors.subtle_pink },
   DiagnosticWarn = { fg = colors.subtle_yellow },
   DiagnosticInfo = { fg = colors.subtle_blue },
   DiagnosticHint = { fg = colors.subtle_green },

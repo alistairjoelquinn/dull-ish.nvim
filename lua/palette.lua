@@ -13,6 +13,7 @@ return {
   subtle_pink = "#b77e89",
   subtle_green = "#7a8574",
   subtle_blue = "#7B8FA6",
+  subtle_purple = "#8b7b8f",
 
   -- ui colors
   ui_grey = "#464646",
