@@ -74,10 +74,13 @@ local groups = {
   ["@constant"] = { fg = colors.subtle_blue },
 
   -- imports
-  ["@identifier.import"] = { link = "@function" },
-  ["@import.identifier"] = { link = "@function" },
-  ["@parameter.import"] = { link = "@function" },
+  ["@identifier.import"] = { fg = colors.subtle_yellow, italic = true },
+  ["@import.identifier"] = { fg = colors.subtle_yellow, italic = true },
+  ["@parameter.import"] = { fg = colors.subtle_yellow, italic = true },
   ["@function.import"] = { fg = colors.subtle_yellow, italic = true },
+  ["@import"] = { fg = colors.subtle_yellow, italic = true },
+  ["@include"] = { fg = colors.fg }, -- for the 'import' keyword itself
+  ["@namespace"] = { fg = colors.subtle_yellow, italic = true }, -- for imported module names
 
   -- misc
   ["@field"] = { fg = colors.subtle_blue },
