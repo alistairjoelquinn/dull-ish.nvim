@@ -76,6 +76,8 @@ local groups = {
   -- ts imports specifically
   ["@variable.import"] = { fg = colors.subtle_yellow, italic = true },
   ["@function.import"] = { fg = colors.subtle_yellow, italic = true },
+  ["@function.imported"] = { fg = colors.subtle_yellow, italic = true },
+  ["@module"] = { fg = colors.subtle_yellow, italic = true },
   ["@identifier"] = { fg = colors.subtle_yellow, italic = true },
   ["@identifier.import"] = { fg = colors.subtle_yellow, italic = true },
   ["@import"] = { fg = colors.subtle_yellow, italic = true },
