@@ -1,17 +1,17 @@
-local colors = require "palette"
+local colors = require 'palette'
 
-vim.cmd "highlight clear"
-if vim.fn.exists "syntax_on" then
-  vim.cmd "syntax reset"
+vim.cmd 'highlight clear'
+if vim.fn.exists 'syntax_on' then
+  vim.cmd 'syntax reset'
 end
 
-vim.o.background = "dark"
-vim.g.colors_name = "dullboy"
+vim.o.background = 'dark'
+vim.g.colors_name = 'dullboy'
 
 local groups = {
   -- editor basics
   Normal = { fg = colors.fg, bg = colors.bg },
-  NormalFloat = { fg = colors.fg, bg = colors.bg_lighter },
+  NormalFloat = { fg = colors.fg, bg = colors.bg },
   Cursor = { fg = colors.bg, bg = colors.fg },
   CursorLine = { bg = colors.bg_lighter },
   LineNr = { fg = colors.ui_grey },
@@ -60,59 +60,59 @@ local groups = {
   Question = { fg = colors.subtle_blue },
 
   -- treesitter groups
-  ["@function"] = { fg = colors.subtle_yellow, italic = true },
-  ["@function.call"] = { fg = colors.subtle_yellow, italic = true },
-  ["@function.builtin"] = { fg = colors.subtle_yellow, italic = true },
-  ["@function.import"] = { fg = colors.subtle_yellow, italic = true },
-  ["@function.imported"] = { fg = colors.subtle_yellow, italic = true },
-  ["@function.macro"] = { fg = colors.subtle_yellow, italic = true },
-  ["@method"] = { fg = colors.subtle_yellow, italic = true },
-  ["@method.call"] = { fg = colors.subtle_yellow, italic = true },
+  ['@function'] = { fg = colors.subtle_yellow, italic = true },
+  ['@function.call'] = { fg = colors.subtle_yellow, italic = true },
+  ['@function.builtin'] = { fg = colors.subtle_yellow, italic = true },
+  ['@function.import'] = { fg = colors.subtle_yellow, italic = true },
+  ['@function.imported'] = { fg = colors.subtle_yellow, italic = true },
+  ['@function.macro'] = { fg = colors.subtle_yellow, italic = true },
+  ['@method'] = { fg = colors.subtle_yellow, italic = true },
+  ['@method.call'] = { fg = colors.subtle_yellow, italic = true },
 
-  ["@variable"] = { fg = colors.subtle_blue },
-  ["@variable.member"] = { fg = colors.subtle_blue },
-  ["@variable.builtin"] = { fg = colors.subtle_blue },
-  ["@variable.parameter"] = { fg = colors.subtle_blue },
-  ["@variable.other"] = { fg = colors.subtle_blue },
-  ["@variable.other.constant"] = { fg = colors.subtle_blue },
-  ["@constant"] = { fg = colors.subtle_blue },
-  ["@field"] = { fg = colors.subtle_blue },
-  ["@property"] = { fg = colors.subtle_blue },
-  ["@parameter"] = { fg = colors.subtle_blue },
+  ['@variable'] = { fg = colors.subtle_blue },
+  ['@variable.member'] = { fg = colors.subtle_blue },
+  ['@variable.builtin'] = { fg = colors.subtle_blue },
+  ['@variable.parameter'] = { fg = colors.subtle_blue },
+  ['@variable.other'] = { fg = colors.subtle_blue },
+  ['@variable.other.constant'] = { fg = colors.subtle_blue },
+  ['@constant'] = { fg = colors.subtle_blue },
+  ['@field'] = { fg = colors.subtle_blue },
+  ['@property'] = { fg = colors.subtle_blue },
+  ['@parameter'] = { fg = colors.subtle_blue },
 
-  ["@type"] = { fg = colors.subtle_purple },
-  ["@type.builtin"] = { fg = colors.subtle_purple },
+  ['@type'] = { fg = colors.subtle_purple },
+  ['@type.builtin'] = { fg = colors.subtle_purple },
 
-  ["@module"] = { fg = colors.subtle_yellow, italic = true },
-  ["@module.name"] = { fg = colors.subtle_yellow, italic = true },
-  ["@module.import"] = { fg = colors.subtle_yellow, italic = true },
-  ["@definition.import"] = { fg = colors.subtle_yellow, italic = true },
+  ['@module'] = { fg = colors.subtle_yellow, italic = true },
+  ['@module.name'] = { fg = colors.subtle_yellow, italic = true },
+  ['@module.import'] = { fg = colors.subtle_yellow, italic = true },
+  ['@definition.import'] = { fg = colors.subtle_yellow, italic = true },
 
   -- misc
-  ["@keyword"] = { fg = colors.fg },
-  ["@string"] = { fg = colors.subtle_green },
-  ["@constructor"] = { fg = colors.fg },
-  ["@tag"] = { fg = colors.fg },
-  ["@tag.attribute"] = { fg = colors.subtle_yellow },
-  ["@tag.delimiter"] = { fg = colors.subtle_green },
-  ["@punctuation.delimiter"] = { fg = colors.subtle_green },
-  ["@punctuation.bracket"] = { fg = colors.subtle_green },
-  ["@punctuation.special"] = { fg = colors.subtle_pink },
-  ["@comment"] = { fg = colors.comment_grey, italic = true },
-  ["@operator"] = { fg = colors.fg_darker },
-  ["@definition"] = { fg = colors.subtle_yellow, italic = true },
+  ['@keyword'] = { fg = colors.fg },
+  ['@string'] = { fg = colors.subtle_green },
+  ['@constructor'] = { fg = colors.fg },
+  ['@tag'] = { fg = colors.fg },
+  ['@tag.attribute'] = { fg = colors.subtle_yellow },
+  ['@tag.delimiter'] = { fg = colors.subtle_green },
+  ['@punctuation.delimiter'] = { fg = colors.subtle_green },
+  ['@punctuation.bracket'] = { fg = colors.subtle_green },
+  ['@punctuation.special'] = { fg = colors.subtle_pink },
+  ['@comment'] = { fg = colors.comment_grey, italic = true },
+  ['@operator'] = { fg = colors.fg_darker },
+  ['@definition'] = { fg = colors.subtle_yellow, italic = true },
 
   -- lsp semantic token groups
-  ["@lsp.type.class"] = { fg = colors.fg },
-  ["@lsp.type.decorator"] = { fg = colors.subtle_pink },
-  ["@lsp.type.enum"] = { fg = colors.fg },
-  ["@lsp.type.function"] = { fg = colors.subtle_yellow, italic = true },
-  ["@lsp.type.interface"] = { fg = colors.fg },
-  ["@lsp.type.namespace"] = { fg = colors.fg },
-  ["@lsp.type.parameter"] = { fg = colors.fg_darker },
-  ["@lsp.type.property"] = { fg = colors.subtle_blue },
-  ["@lsp.type.variable"] = { fg = colors.subtle_blue },
-  ["@lsp.mod.callable"] = { fg = colors.subtle_yellow, italic = true },
+  ['@lsp.type.class'] = { fg = colors.fg },
+  ['@lsp.type.decorator'] = { fg = colors.subtle_pink },
+  ['@lsp.type.enum'] = { fg = colors.fg },
+  ['@lsp.type.function'] = { fg = colors.subtle_yellow, italic = true },
+  ['@lsp.type.interface'] = { fg = colors.fg },
+  ['@lsp.type.namespace'] = { fg = colors.fg },
+  ['@lsp.type.parameter'] = { fg = colors.fg_darker },
+  ['@lsp.type.property'] = { fg = colors.subtle_blue },
+  ['@lsp.type.variable'] = { fg = colors.subtle_blue },
+  ['@lsp.mod.callable'] = { fg = colors.subtle_yellow, italic = true },
 
   -- diagnostics
   DiagnosticError = { fg = colors.subtle_pink },
