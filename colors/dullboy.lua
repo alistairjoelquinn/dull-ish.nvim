@@ -1,4 +1,4 @@
-local colors = require "palette"
+local colors = require "dullboy.palette"
 
 local groups = {
   -- editor basics
