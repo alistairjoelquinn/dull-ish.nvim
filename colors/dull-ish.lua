@@ -121,7 +121,7 @@ local groups = {
 
 local M = {}
 
-M.setup = function(opts)
+M.setup = function()
   vim.cmd "highlight clear"
   if vim.fn.exists "syntax_on" then
     vim.cmd "syntax reset"
@@ -129,13 +129,6 @@ M.setup = function(opts)
 
   vim.o.background = "dark"
   vim.g.colors_name = "dull-ish"
-
-  local config = opts.config or {}
-
-  -- allow users to override the default colors
-  for k, v in pairs(config) do
-    groups[k] = v
-  end
 
   for group, settings in pairs(groups) do
     vim.api.nvim_set_hl(0, group, settings)
