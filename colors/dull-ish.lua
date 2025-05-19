@@ -128,7 +128,6 @@ M.setup = function()
   end
 
   vim.o.background = "dark"
-  vim.g.colors_name = "dull-ish"
 
   for group, settings in pairs(groups) do
     vim.api.nvim_set_hl(0, group, settings)
