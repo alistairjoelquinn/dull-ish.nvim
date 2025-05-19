@@ -1,4 +1,4 @@
-local colors = require "dullboy.palette"
+local colors = require "dull-ish.palette"
 
 local groups = {
   -- editor basics
@@ -128,7 +128,7 @@ M.setup = function(opts)
   end
 
   vim.o.background = "dark"
-  vim.g.colors_name = "dullboy"
+  vim.g.colors_name = "dull-ish"
 
   local config = opts.config or {}
 
