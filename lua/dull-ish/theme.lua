@@ -87,78 +87,78 @@ M.create_highlight_groups = function(colors)
 
     -- TreeSitter Syntax Groups:
     -- Functions
-    ['@function'] = { fg = colors.functions_and_warnings, italic = true },
-    ['@function.call'] = { fg = colors.functions_and_warnings, italic = true },
-    ['@function.builtin'] = {
+    ["@function"] = { fg = colors.functions_and_warnings, italic = true },
+    ["@function.call"] = { fg = colors.functions_and_warnings, italic = true },
+    ["@function.builtin"] = {
       fg = colors.functions_and_warnings,
       italic = true,
     },
-    ['@function.import'] = { fg = colors.functions_and_warnings, italic = true },
-    ['@function.imported'] = {
+    ["@function.import"] = { fg = colors.functions_and_warnings, italic = true },
+    ["@function.imported"] = {
       fg = colors.functions_and_warnings,
       italic = true,
     },
-    ['@function.macro'] = { fg = colors.functions_and_warnings, italic = true },
-    ['@method'] = { fg = colors.functions_and_warnings, italic = true },
-    ['@method.call'] = { fg = colors.functions_and_warnings, italic = true },
+    ["@function.macro"] = { fg = colors.functions_and_warnings, italic = true },
+    ["@method"] = { fg = colors.functions_and_warnings, italic = true },
+    ["@method.call"] = { fg = colors.functions_and_warnings, italic = true },
 
     -- Variables
-    ['@variable'] = { fg = colors.variables_and_identifiers },
-    ['@variable.member'] = { fg = colors.variables_and_identifiers },
-    ['@variable.builtin'] = { fg = colors.variables_and_identifiers },
-    ['@variable.parameter'] = { fg = colors.variables_and_identifiers },
-    ['@variable.other'] = { fg = colors.variables_and_identifiers },
-    ['@variable.other.constant'] = { fg = colors.variables_and_identifiers },
-    ['@constant'] = { fg = colors.variables_and_identifiers },
-    ['@field'] = { fg = colors.variables_and_identifiers },
-    ['@property'] = { fg = colors.variables_and_identifiers },
-    ['@parameter'] = { fg = colors.variables_and_identifiers },
+    ["@variable"] = { fg = colors.variables_and_identifiers },
+    ["@variable.member"] = { fg = colors.variables_and_identifiers },
+    ["@variable.builtin"] = { fg = colors.variables_and_identifiers },
+    ["@variable.parameter"] = { fg = colors.variables_and_identifiers },
+    ["@variable.other"] = { fg = colors.variables_and_identifiers },
+    ["@variable.other.constant"] = { fg = colors.variables_and_identifiers },
+    ["@constant"] = { fg = colors.variables_and_identifiers },
+    ["@field"] = { fg = colors.variables_and_identifiers },
+    ["@property"] = { fg = colors.variables_and_identifiers },
+    ["@parameter"] = { fg = colors.variables_and_identifiers },
 
     -- Types
-    ['@type'] = { fg = colors.types_and_classes },
-    ['@type.builtin'] = { fg = colors.types_and_classes },
+    ["@type"] = { fg = colors.types_and_classes },
+    ["@type.builtin"] = { fg = colors.types_and_classes },
 
     -- Modules
-    ['@module'] = { fg = colors.functions_and_warnings, italic = true },
-    ['@module.name'] = { fg = colors.functions_and_warnings, italic = true },
-    ['@module.import'] = { fg = colors.functions_and_warnings, italic = true },
-    ['@definition.import'] = {
+    ["@module"] = { fg = colors.functions_and_warnings, italic = true },
+    ["@module.name"] = { fg = colors.functions_and_warnings, italic = true },
+    ["@module.import"] = { fg = colors.functions_and_warnings, italic = true },
+    ["@definition.import"] = {
       fg = colors.functions_and_warnings,
       italic = true,
     },
 
     -- Other syntax elements
-    ['@keyword'] = { fg = colors.keywords_and_delimiters },
-    ['@string'] = { fg = colors.strings_and_success },
-    ['@constructor'] = { fg = colors.keywords_and_delimiters },
-    ['@tag'] = { fg = colors.keywords_and_delimiters },
-    ['@tag.attribute'] = { fg = colors.functions_and_warnings },
-    ['@tag.delimiter'] = { fg = colors.keywords_and_delimiters },
-    ['@punctuation.delimiter'] = { fg = colors.keywords_and_delimiters },
-    ['@punctuation.bracket'] = { fg = colors.keywords_and_delimiters },
-    ['@punctuation.special'] = {
+    ["@keyword"] = { fg = colors.keywords_and_delimiters },
+    ["@string"] = { fg = colors.strings_and_success },
+    ["@constructor"] = { fg = colors.keywords_and_delimiters },
+    ["@tag"] = { fg = colors.keywords_and_delimiters },
+    ["@tag.attribute"] = { fg = colors.functions_and_warnings },
+    ["@tag.delimiter"] = { fg = colors.keywords_and_delimiters },
+    ["@punctuation.delimiter"] = { fg = colors.keywords_and_delimiters },
+    ["@punctuation.bracket"] = { fg = colors.keywords_and_delimiters },
+    ["@punctuation.special"] = {
       fg = colors.errors_scope_and_special_characters,
     },
-    ['@comment'] = { fg = colors.comments, italic = true },
-    ['@operator'] = { fg = colors.numbers_and_maths_symbols },
-    ['@definition'] = { fg = colors.functions_and_warnings, italic = true },
+    ["@comment"] = { fg = colors.comments, italic = true },
+    ["@operator"] = { fg = colors.numbers_and_maths_symbols },
+    ["@definition"] = { fg = colors.functions_and_warnings, italic = true },
 
     -- LSP Semantic Tokens
-    ['@lsp.type.class'] = { fg = colors.keywords_and_delimiters },
-    ['@lsp.type.decorator'] = {
+    ["@lsp.type.class"] = { fg = colors.keywords_and_delimiters },
+    ["@lsp.type.decorator"] = {
       fg = colors.errors_scope_and_special_characters,
     },
-    ['@lsp.type.enum'] = { fg = colors.keywords_and_delimiters },
-    ['@lsp.type.function'] = {
+    ["@lsp.type.enum"] = { fg = colors.keywords_and_delimiters },
+    ["@lsp.type.function"] = {
       fg = colors.functions_and_warnings,
       italic = true,
     },
-    ['@lsp.type.interface'] = { fg = colors.keywords_and_delimiters },
-    ['@lsp.type.namespace'] = { fg = colors.keywords_and_delimiters },
-    ['@lsp.type.parameter'] = { fg = colors.numbers_and_maths_symbols },
-    ['@lsp.type.property'] = { fg = colors.variables_and_identifiers },
-    ['@lsp.type.variable'] = { fg = colors.variables_and_identifiers },
-    ['@lsp.mod.callable'] = {
+    ["@lsp.type.interface"] = { fg = colors.keywords_and_delimiters },
+    ["@lsp.type.namespace"] = { fg = colors.keywords_and_delimiters },
+    ["@lsp.type.parameter"] = { fg = colors.numbers_and_maths_symbols },
+    ["@lsp.type.property"] = { fg = colors.variables_and_identifiers },
+    ["@lsp.type.variable"] = { fg = colors.variables_and_identifiers },
+    ["@lsp.mod.callable"] = {
       fg = colors.functions_and_warnings,
       italic = true,
     },
@@ -175,7 +175,6 @@ M.create_highlight_groups = function(colors)
     NvimTreeEmptyFolderName = { fg = colors.numbers_and_maths_symbols },
     NvimTreeFolderIcon = { fg = colors.numbers_and_maths_symbols },
   }
-end
 end
 
 return M
