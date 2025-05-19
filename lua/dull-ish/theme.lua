@@ -21,6 +21,9 @@ M.create_highlight_groups = function(colors)
     CursorLineNr = { fg = colors.functions_and_warnings },
     SignColumn = { bg = colors.main_background },
 
+    -- lualine background
+    LualineNormal = { bg = colors.main_background },
+
     -- Window elements
     WinSeparator = { fg = colors.borders_and_line_numbers },
     FloatBorder = { fg = colors.borders_and_line_numbers },
