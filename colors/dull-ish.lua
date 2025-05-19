@@ -119,19 +119,14 @@ local groups = {
   NvimTreeFolderIcon = { fg = colors.fg_darker },
 }
 
-local M = {}
-
-M.setup = function()
-  vim.cmd "highlight clear"
-  if vim.fn.exists "syntax_on" then
-    vim.cmd "syntax reset"
-  end
-
-  vim.o.background = "dark"
-
-  for group, settings in pairs(groups) do
-    vim.api.nvim_set_hl(0, group, settings)
-  end
+vim.cmd "highlight clear"
+if vim.fn.exists "syntax_on" then
+  vim.cmd "syntax reset"
 end
 
-return M
+vim.o.background = "dark"
+vim.g.colors_name = "dull-ish"
+
+for group, settings in pairs(groups) do
+  vim.api.nvim_set_hl(0, group, settings)
+end
