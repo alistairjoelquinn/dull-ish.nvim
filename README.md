@@ -6,10 +6,9 @@ This theme is based on my own preferences. Low contrast and predominantly monoch
 
 ##### Rust:
 
-<img width="1172" alt="Screenshot 2025-01-28 at 21 44 49" src="https://github.com/user-attachments/assets/e86ffc7f-afb7-4460-a08c-2d2f91431e5d" />
+<img width="1174" alt="Screenshot 2025-05-25 at 14 32 56" src="https://github.com/user-attachments/assets/4de7f210-2680-424b-a926-a062660f9bde" />
 
-##### TypeScript:
 
-<img width="1141" alt="Screenshot 2025-01-28 at 21 57 43" src="https://github.com/user-attachments/assets/3e8b1491-24bf-4375-abed-b325e010083d" />
+##### JavaScript / TypeScript:
 
-It is currently in early development. I plan to make a few changes.
+<img width="737" alt="Screenshot 2025-05-25 at 14 29 23" src="https://github.com/user-attachments/assets/47ea0cd3-422c-48bd-94ad-7aa97121f3f7" />
