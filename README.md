@@ -2,7 +2,7 @@
 
 #### A low contrast, minimalistic theme for Neovim.
 
-This theme is based on my own preferences. Low contrast and predominantly monochrome, with some subtle / dull color hints to help navigate the eyes. It is used as the default theme for the [`dynamic-theme.nvim`](https://github.com/alistairjoelquinn/dynamic-theme.nvim) plugin, which allows you to further edit the theme from within the plugin window. You can read more about this in the [plugin readme]([https://github.com/alistairjoelquinn/dynamic-theme.nvim](https://github.com/alistairjoelquinn/dynamic-theme.nvim?tab=readme-ov-file#dynamic-theme---a-neovim-theme-plugin-with-a-twist)).
+This theme is based on my own preferences. Low contrast and predominantly monochrome, with some subtle / dull color hints to help navigate the eyes. It is used as the default theme for the [`dynamic-theme.nvim`](https://github.com/alistairjoelquinn/dynamic-theme.nvim) plugin, which allows you to further edit the theme from within the plugin window. You can read more about this in the [plugin readme](https://github.com/alistairjoelquinn/dynamic-theme.nvim?tab=readme-ov-file#dynamic-theme---a-neovim-theme-plugin-with-a-twist).
 
 ##### JavaScript / TypeScript:
 
